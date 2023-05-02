@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="{{ "/" | relative_url }}">Home</a></li>
-        <li><a href="{{ "/recipes" | relative_url }}">Recipes</a></li>
-        <li><a href="{{ "/travel" | relative_url }}">Travel</a></li>
-        <li><a href="{{ "/news" | relative_url }}">News</a></li>
-        <li><a href="{{ "/todo" | relative_url }}">To-Do List</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="content">
-    {{ content }}
-  </main>
-</body>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+  </head>
+  <body>
+    <div class="banner">
+      <a href="{{ site.baseurl }}/" class="logo">{{ site.title }}</a>
+      <div class="navbar">
+        <a href="{{ site.baseurl }}/recipes.html">Recipes</a>
+        <a href="{{ site.baseurl }}/travel.html">Travel</a>
+        <a href="{{ site.baseurl }}/news.html">News</a>
+        <a href="{{ site.baseurl }}/todo.html">To-Do List</a>
+      </div>
+    </div>
+    <div class="content">
+      {{ content }}
+    </div>
+  </body>
 </html>
