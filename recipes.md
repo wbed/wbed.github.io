@@ -7,7 +7,7 @@ title: Recipes
 
 ## Nutella Pancakes
 
-![Nutella Pancakes]({{ site.baseurl }}/images/nutella-pancake.png "Pancakes")
+![Nutella Pancakes]({{ site.baseurl }}/images/nutella-pancake.jpg "Pancakes")
 
 ### Ingredients
 - 160g all purpose flour
