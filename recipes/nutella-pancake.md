@@ -3,6 +3,8 @@ layout: default
 title: Nutella Pancakes
 ---
 
+## Nutella Pancakes
+
 ### Ingredients
 - 160g all purpose flour
 - 1/2 tsp baking powder
