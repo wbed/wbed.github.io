@@ -7,5 +7,4 @@ title: Recipes
 
 ## [Nutella Pancakes](/recipes/nutella-pancake.html)
 
-![Nutella Pancakes]({{ site.baseurl }}/images/nutella-pancake.jpg "Pancakes")
-
+<img src="{{ site.baseurl }}/images/nutella-pancake.jpg" alt="Pancakes" width="640">
