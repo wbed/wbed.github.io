@@ -5,4 +5,7 @@ title: Travel
 
 # Travel
 
-This is the travel page.
+## [Flights](/travel/flights.html)
+<img src="{{ site.baseurl }}/images/plane.jpg" alt="Flights" width="640">
+
+
