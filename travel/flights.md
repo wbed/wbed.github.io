@@ -8,6 +8,6 @@ title: Find your flights
   data-locale="en-GB"
   data-market="UK"
   data-currency="GBP"
-  data-hide-powered-by="true"
+  data-hide-powered-by="false"
 ></div>
 <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
