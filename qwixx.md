@@ -3,12 +3,7 @@ layout: default
 title: Qwixx
 ---
 
-<!DOCTYPE html>
 <html lang="en">
-
-<h1 style="font-family: courier; font-size: 90px; color:black; text-align: center;">qwixxonline.uk</h1>
-
-<hr>
 
 <p style="font-family: courier; font-size: 35px; color:black; text-align: center;"><b>How to play Qwixx:</b></p>
 
@@ -26,9 +21,5 @@ title: Qwixx
 <hr>
 
 <p style="font-family: courier; font-size: 20px; text-align: center;">Hosted on Github Pages<br><i>Created by William Bedwin</i></p>
-
-</body>
-</html>
-
 
 
