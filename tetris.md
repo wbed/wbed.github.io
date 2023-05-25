@@ -3,7 +3,6 @@ layout: default
 title: HTML5 Tetris
 ---
 
-<!DOCTYPE html>
 <html>
     <head>
         <title>HTML5 Tetris</title>
