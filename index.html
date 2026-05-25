@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>William Bedwin Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+  }
+
+  :root {
+    /* Exact design system mirror architecture from the flashcard platform */
+    --bg: #F5F2EC;
+    --surface: #FDFBF7;
+    --border: #E0DAD0;
+    --text: #1A1714;
+    --muted: #7A7168;
+    --accent: #C8621A;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 1.5rem;
+  }
+
+  /* Explicitly matches the flashcard app h1 style header configuration */
+  .hub-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0; /* Let flex engine calculate internal gaps smoothly */
+  }
+
+  /* Main structural wrapper matrix to balance the geometric screen center */
+  .layout-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 520px; /* Snugly contains the horizontal 2-button row bounds */
+  }
+
+  /* Row 1 configuration - Holds two identical matching layout blocks side-by-side */
+  .button-top-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 24px; /* Creates the gap where the true Y-axis center sits */
+  }
+
+  /* Row 2 configuration - Perfectly balances Button 3 alone in the middle */
+  .button-bottom-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 24px; /* Creates the matching gap where the true Y-axis center sits */
+  }
+
+  /* Replicates the subheading action bubbles from your core framework code, scaled up */
+  .portal-link {
+    flex: 1;
+    max-width: 240px; /* Harmonizes expanding size caps evenly across both views */
+    text-align: center;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase; /* Guarantees strict capitalization string processing */
+    padding: 16px 24px;
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--muted);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+  }
+
+  /* Interactive state handling transitions */
+  .portal-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(199, 98, 26, 0.08);
+  }
+
+  .portal-link:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  }
+
+  /* Fluid adaptation layers for smaller phone displays */
+  @media (max-width: 480px) {
+    .hub-title {
+      font-size: 2.1rem;
+    }
+    
+    .button-top-row {
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .button-bottom-row {
+      margin-top: 0px;
+    }
+
+    .portal-link {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <h1 class="hub-title">William Bedwin</h1>
+
+  <div class="layout-wrapper">
+    
+    <div class="button-top-row">
+      <a href="https://your-app-name.onrender.com/" class="portal-link">Flashcards</a>
+      <a href="https://wbed.github.io/cv.html" class="portal-link">CV</a>
+    </div>
+
+    <div class="button-bottom-row">
+      <a href="#" class="portal-link">Button 3</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
